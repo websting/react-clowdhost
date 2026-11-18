@@ -1,0 +1,120 @@
+
+@import "tailwindcss";
+
+/* Smooth Section Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero Entrance Animation */
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base Animation */
+.hero-rise {
+  animation: hero-rise 0.9s
+    cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Staggered Animation Delays */
+.hero-delay-1 {
+  animation-delay: 0.15s;
+}
+
+.hero-delay-2 {
+  animation-delay: 0.3s;
+}
+
+.hero-delay-3 {
+  animation-delay: 0.45s;
+}
+
+.hero-delay-4 {
+  animation-delay: 0.6s;
+}
+
+.hero-delay-5 {
+  animation-delay: 0.75s;
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-rise {
+    animation: none;
+  }
+}
+
+
+/* About Page Entrance Animations */
+@keyframes about-rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-rise {
+  animation: about-rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.about-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.about-delay-2 {
+  animation-delay: 0.3s;
+}
+
+.about-delay-3 {
+  animation-delay: 0.5s;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  .about-rise {
+    animation: none;
+  }
+}
+
+
+/* Reusable Scroll Reveal Animation */
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 800ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
