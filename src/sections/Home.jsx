@@ -15,7 +15,7 @@ function Home() {
     >
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-[position:35%_center] sm:bg-center"
+        className="absolute inset-0 bg-cover bg-position-[35%_center] sm:bg-center"
         style={{
           backgroundImage: "url('/images/hero-bg.png')",
         }}
