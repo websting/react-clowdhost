@@ -111,7 +111,7 @@ function Hosting() {
                 it deserves. Choose a hosting solution designed to
                 grow alongside your business.
               </p>
-
+              {/* Call-to-Action Buttons */}
               <div className="mt-9 flex flex-col gap-4 sm:flex-row">
                 <a
                   href="#hosting-plans"
