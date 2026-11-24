@@ -56,19 +56,19 @@ function Home() {
             {/* Call-to-Action Buttons */}
             <div className="hero-rise hero-delay-4 mt-9 flex flex-col gap-4 sm:flex-row">
 
-              <a
-                href="/hosting"
+              <Link
+                to="/hosting"
                 className="rounded-xl bg-sky-500 px-7 py-4 text-center font-semibold text-white transition-all hover:-translate-y-1 hover:bg-sky-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky-400"
               >
                 Explore Hosting →
-              </a>
+              </Link>
 
-              <a
-                href="/domain"
+              <Link
+                to="/domain"
                 className="rounded-xl border border-white/30 px-7 py-4 text-center font-semibold text-white transition-all hover:border-sky-400 hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky-400"
               >
                 Find Your Domain
-              </a>
+              </Link>
 
             </div>
 

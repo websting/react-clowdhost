@@ -2,6 +2,7 @@
 import Navbar from '../components/Navbar'
 import PageBanner from '../components/PageBanner'
 import ScrollReveal from '../components/ScrollReveal'
+import { Link } from 'react-router'
 
 import {
   Mail,
@@ -296,13 +297,13 @@ function Contact() {
               </p>
             </div>
 
-            <a
-              href="/hosting"
+            <Link
+              to="/hosting"
               className="inline-flex shrink-0 items-center gap-3 rounded-xl bg-sky-500 px-7 py-4 font-semibold text-white transition-all hover:-translate-y-1 hover:bg-sky-400"
             >
               Explore Hosting
               <ArrowRight className="h-5 w-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </ScrollReveal>

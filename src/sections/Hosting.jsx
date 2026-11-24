@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Navbar from '../components/Navbar'
 import PageBanner from '../components/PageBanner'
 import ScrollReveal from '../components/ScrollReveal'
+import { Link } from 'react-router'
 
 import {
   Server,
@@ -121,12 +122,12 @@ function Hosting() {
                   <ArrowRight className="h-5 w-5" />
                 </a>
 
-                <a
-                  href="/domain"
+                <Link
+                  to="/domain"
                   className="inline-flex items-center justify-center rounded-xl border border-slate-300 px-7 py-4 font-semibold text-slate-800 transition-colors hover:border-sky-400 hover:bg-white"
                 >
                   Find a Domain
-                </a>
+                </Link>
               </div>
 
               <div className="mt-12 flex flex-wrap gap-x-8 gap-y-4 border-t border-slate-200 pt-7">
